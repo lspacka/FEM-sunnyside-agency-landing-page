@@ -56,10 +56,11 @@ h1, h2, h3, h4, a, .name {
 }
 
 h2 {
-  font-size: clamp(1.7rem, 5vw, 2rem);
-  padding-right: 3rem;
+  font-size: clamp(1.7rem, 5vw, 2.3rem);
+  /* padding-right: 3rem; */
   font-weight: 900;
   color: var(--darker-desat-blue);
+  text-wrap: wrap;
 }
 
 p {
@@ -79,6 +80,10 @@ header {
   padding: 2rem 2rem 6rem 2rem; 
 }
 
+.header-logo {
+  inline-size: 22%;
+}
+
 .header-links {
   display: flex;
   gap: clamp(1.7rem, 5vw, 2.5rem);
@@ -86,7 +91,7 @@ header {
 }
 
 .header-link {
-  font-size: 0.88rem;
+  /* font-size: 0.88rem; */
   font-family: 'Barlow';
   text-decoration: none;
   color: white;
@@ -112,10 +117,11 @@ button:hover {
 }
 
 .heading-title {
-  font-size: clamp(1.9rem, 5vw, 2.9rem);
+  font-size: clamp(1.9rem, 5vw, 3.5rem);
   letter-spacing: clamp(5px, 2vw, 9px);
   color: white;
-  padding-bottom: 2.5rem;
+  padding-bottom: 7rem;     /* 2.5rem */
+  font-weight: 900;
 }
 
 .arrow {
@@ -144,8 +150,17 @@ button:hover {
 
 .feature {
   padding: 9rem 4rem 3.5rem 6rem;
+  /* padding: 9rem 13rem 3.5rem 6rem; */
   text-align: left;
 }
+
+.feature-1 h2 {
+  padding-right: 3em;
+}
+
+/* .feature-p:not(.mini-p) {
+  padding-right: 6em;
+} */
 
 .no-link {
   padding-top: 0;
@@ -164,7 +179,7 @@ button:hover {
 
 .link1-underline,
 .link2-underline {
-  width: 30%;  /* 26.6 */
+  width:  24%;  
   height: 10px;
   border-radius: 50px;
   transition: .3s ease-in-out;
@@ -195,10 +210,11 @@ button:hover {
 }
 
 .feature-p:not(.mini-p) {
-  font-size: clamp(0.88rem, 5vw, 1rem);
+  font-size: clamp(0.88rem, 5vw, 1.1rem);
   padding-bottom: 2rem;
   color: var(--grayish-blue);
   font-weight: 600;
+  padding-right: 4em;
 }
 
 .mini-title {
@@ -209,7 +225,9 @@ button:hover {
 
 .mini-p {
   color: var(--dark-desat-cyan);
-  padding: 0 1.7rem 0 1.7rem;
+  /* padding: 0 1.7rem 0 1.7rem; */
+  padding: 0 5.5em;
+  /* font-size: 1.1rem; */
 }
 
 .mini-title-2, .mini-p-2 {
@@ -257,24 +275,24 @@ button:hover {
 }
 
 .testimonials {
-  padding-top: 5rem;
-  gap: 2.5rem;
+  padding-top: 5.5rem;
+  gap: 4.5rem;   /* 2.5rem */
 }
 
 .testimonials-title {
   color: var(--grayish-blue);
-  font-size: clamp(0.73rem, 3vw, 1.1rem);
+  font-size: clamp(0.73rem, 3vw, 1.25rem);
   font-weight: 900;
   letter-spacing: 6px;
 }
 
 .testimonial {
-  font-size: 0.88rem;
+  /* font-size: 1.2rem; */
   padding: 0 .5rem 0 .5rem;
 }
 
 .avatar {
-  width: 70px;
+  width: 80px;
   border-radius: 50px;
 }
 
@@ -282,18 +300,19 @@ button:hover {
   padding: 3rem 0 4rem 0;
   color: var(--darker-grayish-blue);
   font-weight: 600;
+  line-height: 2.1;
 }
 
 .name {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  padding-bottom: 0.3rem;
+  padding-bottom: 0.4rem;
   color: var(--darker-desat-blue);
 }
 
 .occupation {
   color: var(--grayish-blue);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 600;
 }
 
@@ -344,7 +363,7 @@ footer {
 }
 
 .footer-link, .social-link {
-  transition: .4s ease-in-out;
+  transition: .27s ease-in-out;
 }
 
 .footer-links {
