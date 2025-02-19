@@ -203,7 +203,7 @@ button:hover {
 
 .feature-link {
   color: var(--darker-desat-blue);
-  font-weight: 700;
+  font-weight: 900;
   font-size: 0.97rem;
   text-decoration: none;
   /* z-index: 1; */
@@ -281,7 +281,7 @@ button:hover {
 
 .testimonials-title {
   color: var(--grayish-blue);
-  font-size: clamp(0.73rem, 3vw, 1.25rem);
+  font-size: clamp(0.7rem, 3vw, 1.25rem);
   font-weight: 900;
   letter-spacing: 6px;
 }
@@ -369,7 +369,7 @@ footer {
 .footer-links {
   font-size: clamp(0.8rem, 5vw, 1.1rem);
   padding: 2em 0 5em 0;
-  gap: clamp(3em, 4vw, 5em);
+  gap: clamp(2em, 4vw, 5em);
 }
 
 .socials {
@@ -411,6 +411,9 @@ footer {
   }
   .header-logo {
     inline-size: 40%;
+  }
+  .heading-title {
+    padding-bottom: 1.1em;
   }
   .heading-text {
     margin-top: 2rem;
@@ -502,25 +505,50 @@ footer {
     padding: 3rem 1rem 3rem 1rem;
     height: fit-content;
   }
+  .feature-link {
+    font-size: 0.87rem;
+  }
+  /* .feature-1 h2 {
+    padding-right: 0;
+  } */
+   .feature-1 h2,
+   .feature-p:not(.mini-p) {
+    padding-right: 0;
+   }
+   /* .feature-p:not(.mini-p) {
+    padding: 1em;
+   } */
   .mini-p{
-    font-size: 0.7rem;
+    font-size: 0.77rem;
     padding: 0;
+    /* font-weight: 600; */
   }
   .no-link {
     aspect-ratio: 9 / 16;
+    padding: 3rem 0.5em;
   }
   .testimonials-container {
-    padding: 3rem 1rem 4rem 1rem;
+    padding: 3rem 1rem 4rem;
   }
   .testimonials {
     flex-direction: column;
     gap: 3rem;
+    padding-top: 3.5rem;
   }
   .testimonial {
     padding: 0;
   }
   .blurb {
     padding: 1.5rem 0 2rem 0;
+    font-size: 0.87rem;
+    line-height: 1.5;
+  }
+  .name {
+    padding-bottom: 0;
+    font-size: 1rem;
+  }
+  .occupation {
+    font-size: 0.8rem;
   }
   .images {
     display: grid;
@@ -539,10 +567,13 @@ footer {
     background-image: url(./images/mobile/image-gallery-sugar-cubes.jpg);
   }
   footer {
-    padding: 3em 1em 4em 1em;
+    padding: 3em 1.5em 4em;
+  }
+  .footer-logo {
+    inline-size: 60%;
   }
   .footer-links {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .socials {
     gap: 1.5em;
